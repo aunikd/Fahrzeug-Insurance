@@ -1,4 +1,4 @@
-package model;
+package com.insurance.model;
 
 
 
@@ -6,19 +6,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Set;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.OneToOne;
-import javax.persistence.OrderColumn;
-import javax.persistence.Table;
+
 import org.springframework.lang.NonNull;
 
 // Vehicle pojo entity
@@ -29,7 +17,7 @@ private int vehicle_id;
 
 private String vehicle_purchase_date;
 
-private Policy vehicle_policy_type;
+private String vehicle_policy_type;
 
 private String vehicle_type;
 
@@ -87,11 +75,11 @@ public void setVehicle_purchase_date(String vehicle_purchase_date) {
 	this.vehicle_purchase_date = vehicle_purchase_date;
 }
 
-public Policy getVehicle_policy_type() {
+public String getVehicle_policy_type() {
 	return vehicle_policy_type;
 }
 
-public void setVehicle_policy_type(Policy vehicle_policy_type) {
+public void setVehicle_policy_type(String vehicle_policy_type) {
 	this.vehicle_policy_type = vehicle_policy_type;
 }
 

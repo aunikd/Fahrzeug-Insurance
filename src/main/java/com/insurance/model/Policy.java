@@ -1,4 +1,4 @@
-package model;
+package com.insurance.model;
 
 public class Policy {
 	private String vehicle_policy_type;

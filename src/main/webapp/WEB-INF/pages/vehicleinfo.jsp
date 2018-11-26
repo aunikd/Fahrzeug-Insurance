@@ -19,11 +19,11 @@
 <h2>Buy Insurance</h2>
 </div><br>
 <br><br>
-
 Vehicle Type&nbsp<select name="vehicle_type">
 <option value="2W">2-Wheeler</option>
 <option value="4W">4-Wheeler</option>
 </select><br><br>
+
 
 Company/Manufactutrer&nbsp<select name="vehicle_company">
 <c:forEach var="r" items="${company_list}">   
@@ -37,7 +37,19 @@ Vehicle Model&nbsp<select name="vehicle_model">
    </c:forEach>
 </select><br><br>
 
-Purchase Date:&nbsp<input type="date" name="p_date"  required /><br><br>
+
+
+Zone/Location &nbsp<select name="zone">
+<option value="1">ZONE A-Ahmedabad, Bangalore, Chennai,  Hyderabad , Kolkata, Mumbai, New Delhi and Pune</option>
+<option value="2">ZONE B-Rest of India</option>
+</select><br><br>
+
+Purchase Date:&nbsp<input type="date" name="vehicle_purchase_date" value="25-Nov-2016"  required /><br><br>
+
+Policy Type &nbsp<select name="policy">
+<option value="3PL">Thrid Party Liability Policy</option>
+<option value="COMP">Comprehensive Policy</option>
+</select><br><br>
 
 
 <div id="submit"><input type="submit" Value="Submit" /></div>
